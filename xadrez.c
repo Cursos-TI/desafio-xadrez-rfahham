@@ -32,7 +32,7 @@ int main() {
 
     // Definindo a quantidade de movimentos
     int movimentosCima = 2;
-    int movimentosEsquerda = 1;
+    int movimentosDireita = 1;
 
     // Loop for externo: movimenta o Cavalo duas vezes para cima
     for (int i = 0; i < movimentosCima; i++) {
@@ -41,9 +41,9 @@ int main() {
         // Loop while interno: só executa no último movimento para cima
         // para simular o movimento "em L" do Cavalo
         int j = 0;
-        while (j < movimentosEsquerda && i == movimentosCima - 1) {
+        while (j < movimentosDireita && i == movimentosCima - 1) {
             printf("\n"); // Separação visual
-            printf("Esquerda\n");
+            printf("Direita\n");
             j++;
         }
     }
